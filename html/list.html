@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/list.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/template-native.js"></script>
+	<script src="../lib/jQuery/jquery.cookie.js"></script>
+	<script src="../js/list.js"></script>
+	
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header"></div>
+	
+	<!-- 导航部分 -->
+	<div id="warp_nav">
+		<div class="nav">
+			<div class="nav_list">
+				<h2>商品分类</h2>
+				 <ul class="nav_map" style="display:none">
+						<li>
+							<i></i>
+							<a href="#">家具</a>
+						</li>
+						<li class="nav_map_one1">
+							<i></i>
+							<a href="#">卧室</a><a href="#">床</a>
+							<a href="#">床垫</a><a href="#">衣柜</a>
+							<div class="big_box1"  style="display:none"></div>
+						</li>
+						<li class="nav_map_one2">
+							<i></i>
+							<a href="#">客厅</a>
+							<a href="#">沙发</a>
+							<a href="#">电视柜</a>
+							<div class="big_box2"  style="display:none"></div>
+						</li>
+						<li><i></i><a href="#">餐厅</a><a href="#">餐桌</a><a href="#">餐椅</a></li>
+						<li><i></i><a href="#">书房</a><a href="#">书桌</a><a href="#">书柜</a></li>
+						<li><i></i><a href="#">儿童桌</a><a href="#">儿童床</a><a href="#">儿童桌</a></li>
+						<li><i></i><a href="#">建材灯饰</a></li>
+						<li><i></i><a href="#">灯饰照明</a><a href="#">吊灯</a><a href="#">吸顶灯</a></li>
+						<li><i></i><a href="#">卫浴</a><a href="#">浴室柜</a><a href="#">座便器</a></li>
+						<li><i></i><a href="#">家居家饰</a></li>
+						<li><i></i><a href="#">床上用品</a><a href="#">布艺织物</a></li>
+						<li><i></i><a href="#">家具饰品</a><a href="#">居家日用</a></li>
+				</ul> 
+			</div>
+			<!-- 商品导航 -->
+			<ul class="navigator">
+				<li><a href="#">家具城</a></li>
+				<li><a href="#">建材城</a></li>
+				<li><a href="#">家居装饰</a></li>
+				<li><a href="#">团购</a></li>
+				<li><a href="#">体验馆</a><i></i></li>
+				<li><a href="#">晒家</a></li>
+				<li><a href="#">装修网</a></li>
+				<li><a href="#">图览家具</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 中间商品列表 -->
+	<div id="warp_mian">
+		<div class="mian">
+			<div class="colligate">
+				<ul class="colligate_nav">
+					<li>综合</li>
+					<li>销量</li>
+					<li>价格</li>
+					<li>评价数</li>
+					<li>上架时间</li>
+				</ul>
+			</div>
+
+
+			<!-- 下面图片信息 -->
+			<div class="list_buy">
+				
+				<script type="text/html" id="temp">
+					<% for (var i = 0; i < product.length; i++) { %>
+						<div class="list_one">
+							<dl class="list_img">
+								<dt><a href="details.html"><img class="list_image" src="<%=product[i].src%>"></a></dt>
+								<dd class="list_price"><%= product[i].price %></dd>
+								<dd class="list_fon"><%= product[i].fon %></dd>
+								<dd class="list_discuss">
+									<span class="list_sold"><%= product[i].sold %></span>
+									<span class="list_btn2"><%= product[i].btn2 %></span>
+								</dd>
+								<dd class="list_join">
+									<a class="join" id="list_shop"><%= product[i].join %>
+										<b id="list_id"><%= product[i].id %></b>
+									</a>
+								</dd>
+							</dl>
+						</div>
+					<% } %>
+			</script>
+			</div>
+		</div>
+	</div>
+
+	
+
+
+	<!-- 侧边栏 -->
+	<div id="side-bar">
+		<div id="cart">购物车<span id="mount" >0</span></div>
+	</div>
+
+	<!-- 底部 -->
+	<div class="footer"></div>
+	
+	<script>
+		$(".header").load("header.html");
+		$(".footer").load("footer.html");
+
+
+
+
+
+
+// var count = parseInt($(".gwc a span").html())+1;
+// 			$(".gwc a span").html(count);
+
+	</script>
+	
+
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,192 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dd,form,input,i,a{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;color:#000;}
+body{font-size:14px;}
+.fl{float:left;}
+.fr{float:right;}
+img{border:none;}
+html,body{height: 100%; font-size:12px;}
+body{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.warp_mounting{width: 100%; height: auto; overflow: hidden; top: 0; z-index: 101; background: rgba(207,0,14,0.85); position: fixed;}
+.mounting{width: 1190px; height: 50px; overflow: hidden; position: relative; z-index: 101; margin: 0 auto;}
+.mounting_one{width: 123px; height: 35px; color: #fff; margin-top: 7px; }
+.mounting_search{ height: 32px; background: #fff; float: left; margin-top: 9px;}
+.mounting_font{outline: none; border:1px solid #fff; color: #333; height: 18px; line-height: 18px; padding: 4px 10px; width: 678px;}
+.mounting_sub{background: #b6000c; font-size: 16px; border:0; height: 32px; width: 82px; text-align: center; color: #fff}
+
+
+
+
+
+
+
+.side{width: 44px; height: 42px; z-index: 102; background:url(../image/side.gif) 0 -126px no-repeat; position: fixed; right: 10px; bottom: 0;}
+
+
+
+#warp_nav{width: 100%;}
+#warp_nav .nav{width: 1190px; margin: 0 auto}
+#warp_nav .nav .nav_list{ position: relative; float: left;} 
+#warp_nav .nav .nav_list h2{width: 200px; height: 36px; background: #cf000e; line-height: 36px; color: #fff; text-align: center; font-weight: 300}
+#warp_nav .nav .nav_list .nav_map{ position: absolute; width: 200px; padding: 10px 0 18px; background: rgba(00,00,00,.8); z-index: 100;}
+#warp_nav .nav .nav_list .nav_map li{padding: 8px 0; position: relative;}
+#warp_nav .nav .nav_list .nav_map li a{color: #c8c8c8; font-size: 14px; padding: 0 3px;}
+#warp_nav .nav .nav_list .nav_map li i{display: inline-block; width: 21px; float: left; height: 21px; margin: 0 10px 0 15px;}
+#warp_nav .nav .nav_list .nav_map li:nth-of-type(1) i{background: url(../image/site.png) no-repeat; background-position: -69px -167px;}
+#warp_nav .nav .nav_list .nav_map li:nth-of-type(2) i{background: url(../image/site.png) no-repeat; background-position: -69px -146px;}
+#warp_nav .nav .nav_list .nav_map li:nth-of-type(3) i{background: url(../image/site.png) no-repeat; background-position: -69px -125px;}
+#warp_nav .nav .nav_list .nav_map li:nth-of-type(4) i{background: url(../image/site.png) no-repeat; background-position: -69px -229px;}
+#warp_nav .nav .nav_list .nav_map li:nth-of-type(5) i{background: url(../image/site.png) no-repeat; background-position: -69px -210px;}
+#warp_nav .nav .nav_list .nav_map li:nth-of-type(6) i{background: url(../image/site.png) no-repeat; background-position: -69px -189px;}
+#warp_nav .nav .nav_list .nav_map li:nth-of-type(7) i{background: url(../image/site.png) no-repeat; background-position: -69px -40px;}
+#warp_nav .nav .nav_list .nav_map li:nth-of-type(8) i{background: url(../image/site.png) no-repeat; background-position: -69px -20px;}
+#warp_nav .nav .nav_list .nav_map li:nth-of-type(9) i{background: url(../image/site.png) no-repeat; background-position: -69px -0px;}
+#warp_nav .nav .nav_list .nav_map li:nth-of-type(10) i{background: url(../image/site.png) no-repeat; background-position: -69px -104px;}
+#warp_nav .nav .nav_list .nav_map li:nth-of-type(11) i{background: url(../image/site.png) no-repeat; background-position: -69px -84px;}
+#warp_nav .nav .nav_list .nav_map li:nth-of-type(12) i{background: url(../image/site.png) no-repeat; background-position: -69px -63px;}
+#warp_nav .nav .nav_list .nav_map li a:hover {color: #CF000E;}
+
+
+
+
+
+
+
+
+
+#warp_nav .nav .navigator{float: left; overflow: hidden;}
+#warp_nav .nav .navigator li{float: left; font-size: 16px; padding: 0 18px; line-height: 36px; position: relative;}
+#warp_nav .nav .navigator li i{background:url(../image/hot.gif); display: inline-block; height: 10px; width: 23px; position: absolute;}
+#warp_nav .nav .navigator li:hover a{color: #cf000e}
+
+
+/*banner*/
+#warp_banner{width: 100%; height: 448px;}
+#banner {width: 100%; margin: 0 auto; position: relative; height:100%; overflow: hidden;}
+#banner #imgs {list-style: none; height: 460px; position: absolute; overflow: hidden;}
+#banner #imgs li{float: left; width: 1329px; height: 460px;}
+#banner #imgs li img{width:100%; height: 460px;}
+		#pages {position: absolute; top: 400px; height:20px; padding:5px; width:100%; }
+		#pages div {width: 15px; height: 15px;border-radius: 10px; background: white; float: left; bottom: 0; margin-left:10px;}
+		#pages div:nth-child(1){margin-left: 600px;}
+		#pages div.curr {background: red;}
+
+
+
+
+/*中间主体部分*/
+#warp_main{width: 100%;}
+#warp_main .main{width: 1190px; margin: 0 auto;}
+/*团购、秒杀、新品、简美*/
+#warp_main .main .advert-img{ margin-top: 20px; position: relative; height: 150px;}
+#warp_main .main .advert-img .img_item{width: 290px; height: 150px; margin-right: 7px; overflow: hidden; float: left;}
+#warp_main .main .advert-img .img_item p,.tuan{position: absolute; z-index: 99; margin-left: 30px; margin-top: 10px;}
+#warp_main .main .advert-img .img_item p{font-size: 22px;}
+#warp_main .main .advert-img .img_item .tuan{top: 30px;}
+#warp_main .main .advert-img a{color:#001a3f;}
+#warp_main .main .advert-img .img_item img{width: 295px; right: 0; position: relative; height: 184px;}
+#warp_main .main .advert-img .img_item:hover img{width: 290px;}
+
+
+/*1楼卧室*/
+#warp_main .main .bedroom{overflow: hidden; margin-top: 48px; position: relative;}
+#warp_main .main .bedroom .bedroom_top{border-bottom: 1px solid #333; height: 30px;}
+#warp_main .main .bedroom .bedroom_top h2{ width: 210px; float: left;}
+/*ＴＡＢ切换的部分*/
+#warp_main .main .bedroom .bedroom_top .bedroom_tab{overflow: hidden; float: left;}
+#warp_main .main .bedroom .bedroom_top .bedroom_tab li{float: left; padding: 6px 15px 3px; font-size:15px ;}
+#warp_main .main .bedroom .bedroom_top .bedroom_tab li:hover{font-weight: 600; border-bottom: 2px solid #000;}
+
+/*床,床垫,美规床,美国进口床垫,床头柜,衣柜*/
+#warp_main .main .bedroom .bedroom_top .bedroom_tag{float: right;}
+#warp_main .main .bedroom .bedroom_top .bedroom_tag li{float: left; padding: 7px 10px;}
+#warp_main .main .bedroom .bedroom_top .bedroom_tag li:last-child{padding-right: 0;}
+#warp_main .main .bedroom .bedroom_top .bedroom_tag li:hover a{color: #CF000E;}
+
+
+/*1楼图片部分*/
+#warp_main .main .bedroom .bedroom_btn{height: auto; overflow: hidden;}
+/*左边部分*/
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left{float: left; left: 0; width: 208px; height: 610px; position: relative;  border-left: 1px solid #eee; border-bottom: 1px solid #eee; border-right: 1px solid #eee;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left .bedroom_btn_Img{width: 210px; position: relative;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left .bedroom_btn_Img a p{position: absolute; color: #fff; }
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left .bedroom_btn_Img a p:nth-of-type(1) {left: 20px; top: 22px; font-size:22px ;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left .bedroom_btn_Img a p:nth-of-type(2) {left: 20px; top: 52px; font-size: 15px;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left .bedroom_btn_Img a .look{top: 80px; position: absolute; color: #fff; left: 20px; border: 1px solid #fff; padding: 2px 7px;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left .bedroom_btn_Img a img{width: 100%; height: 287px;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left .bedroom_btn_Tag{padding: 38px 0 0 30px; height: 128px;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left .bedroom_btn_Tag li{padding-right: 18px; width: 65px; float: left; line-height: 18px; height: 28px; color: #666; font-size: 13px; overflow: hidden;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left .bedroom_btn_Tag li:hover a{color: #CF000E;}
+/*品牌*/
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left .bedroom_btn_Brand{padding: 22px 0 14px;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left .bedroom_btn_Brand li a{display: block; width: 94px; height: 60px; background: url(../image/brand.png) no-repeat left center; float: left;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left .bedroom_btn_Brand li:nth-of-type(1) a{background-position: -10px 0;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left .bedroom_btn_Brand li:nth-of-type(2) a{background-position: -116px 0;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left .bedroom_btn_Brand li:nth-of-type(3) a{background-position: -10px -60px;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_left .bedroom_btn_Brand li:nth-of-type(4) a{background-position: -115px -60px;}
+
+/*右边部分*/
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right{width: 979px; height: 610px; float: left; position: absolute; top: 31px; right: 0;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .bedroom_btn_one{width: 505px; height: 365px; position:  relative; float: left; border-right: 1px solid #eee; border-bottom: 1px solid #eee; overflow: hidden;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .bedroom_btn_one .font{position: absolute; width:245px; height: 90px; text-align: center; background: rgba(255,255,255,.8); bottom: 30px; left:136px;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .bedroom_btn_one .font span{display: block; font-size: 20px; color: #000; margin-left: 40px; padding-bottom: 3px; border-bottom: 1px dotted #000;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .bedroom_btn_one .font p{margin-top: 42px; margin-left: 0;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .two{width: 236px; position: relative; height: 365px; overflow: hidden; border-bottom: 1px solid #eee; border-right:1px solid #eee ;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .two img{position: relative; width: 239px; right: 0;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .two ul{position: absolute; left: 21px; bottom: 14px;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .two ul li a{line-height: 18px; font-size: 12px; color: #aaa; display: block;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .two ul li a:hover{color: #CF000E;}
+
+/*第三个*/
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .thr{width: 235px; height: 182px; border-bottom: 1px solid #eee; border-right: 1px solid #eee;  position: relative; overflow: hidden;} 
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .thr img{position: relative; width: 239px; right: 0;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .thr ul{position: absolute; left: 21px; bottom: 14px;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .thr ul li a{line-height: 18px; font-size: 12px; color: #aaa; display: block;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .thr ul li a:hover{color: #CF000E;}
+
+
+/*第五个*/
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .fou{width: 252px; float: left; height: 244px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; position: relative; overflow: hidden;} 
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .fou img{position: relative; width: 255px; right: 0;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .fou ul{position: absolute; left: 21px; bottom: 14px;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .fou ul li a{line-height: 18px; font-size: 12px; color: #aaa; display: block;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .fou ul li a:hover{color: #CF000E;}
+
+
+/*第七个*/
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .fiv{width: 236px; float: left; height: 244px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; position: relative; overflow: hidden;} 
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .fiv img{position: relative; width: 255px; right: 0;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .fiv ul{position: absolute; left: 21px; bottom: 14px;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .fiv ul li a{line-height: 18px; font-size: 12px; color: #aaa; display: block;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .fiv ul li a:hover{color: #CF000E;}
+
+/*第八个*/
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .six{width: 235px; float: left; height: 244px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; position: relative; overflow: hidden;} 
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .six img{position: relative; width: 255px; right: 0;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .six ul{position: absolute; left: 21px; bottom: 14px;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .six ul li a{line-height: 18px; font-size: 12px; color: #aaa; display: block;}
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .six ul li a:hover{color: #CF000E;}
+
+/*第五个*/
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .fou img:hover {width: 252px;}
+/*第六个*/
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .fiv img:hover {width: 236px;}
+/*最后一个图片的hover*/
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .six img:hover {width: 236px;}
+
+/*hover效果*/
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right .fl img:hover {width: 236px;}
+
+
+#warp_main .main .bedroom .bedroom_btn .bedroom_btn_right1{display: none;}
+
+
+
+.btn_banner img{width: 100%; margin: 40px 0;}

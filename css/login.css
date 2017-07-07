@@ -1,0 +1,18 @@
+/*#warp_main{100%; height: auto; background: #CF000E;}
+#warp_main .main{width: 1070px; margin: 0 auto; height: 456px;  padding: 27px 0;}
+#warp_main .main form{width:306px; height: 402px; background: #fff; float: right; padding-top: 25px;}
+#warp_main .main form input:nth-child(1){width: 280px; height: 40px; margin-left: 8px;}
+#warp_main .main form input:nth-child(2){width: 280px; height: 40px; margin-top: 10px; margin-left: 8px;}
+#warp_main .main form p input:nth-child(3){width: 15px; height: 20px;margin-left: 8px; margin-top: 10px;}*/
+#win{
+	display:none;
+	 position:absolute;
+	  left:50%; top:50%;
+	   width:600px;
+	    height:400px;
+	     margin-left:-300px;
+	      margin-top:-200px;
+	       border:1px solid #888;
+	        background-color:#edf;
+	         text-align:center;
+	         }

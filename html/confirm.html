@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>确定订单</title>
+	<link rel="stylesheet" href="../css/confirm.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/confirm.js"></script>
+</head>
+<body>
+	<div id="warp_header">
+		<!--登录注册及购物车-->
+		<div class="header_top">
+			<ul class="header_left">
+				<li><a id="open">请登录</a></li>
+					<div id="win">
+						<!--登录的关闭按钮-->
+						<a id="close">&Chi;</a>
+						<div class="login">
+							<p>账号登录</p><br />
+							<!--<div class="username"></div>-->
+							<input type="text" class="username" placeholder="用户名/手机号/邮箱"/>
+							<p class="error"></p>
+							<!--<div class="password"></div>-->
+							<input type="password" class="password" placeholder="密码" />
+							<p class="error"></p>
+							<div class="checked"><p></p><span>自动登录</span></div>
+							<a href="javascript:;" class="submit">登录</a>
+							<div class="regist"><span>注册</span><span>忘记密码</span></div>
+						</div>
+					</div>
+				<li><a   href="register.html">免费注册</a></li>
+			</ul>
+			<ul class="header_right">
+				<li class="header_list">
+					<a href="#">我的美乐乐</a>
+					<ol>
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">我的金币</a></li>
+						<li><a href="#">我的红包</a></li>
+						<li><a href="#">我的收藏</a></li>
+						<li><a href="#">我的评价</a></li>
+						<li><a href="#">申请保价</a></li>
+					</ol>
+				</li>
+				<li><a href="#">购物车</a></li>
+				<li><a href="#">关注美乐乐</a></li>
+				<li><a href="#">帮助中心</a></li>
+				<li><a href="#">收藏本站</a></li>
+				<li><a href="#">全国热线</a></li>
+			</ul>
+		</div>
+	</div>
+
+		<div class="warp_pic">
+			<div class="pic">
+				<div class="pic_logo">
+					<h1><img src="../image/logo.png"></h1>
+					<p class="step_cart"></p>
+				</div>
+				<div class="my_shop">确认订单信息</div>
+			</div>
+		</div>
+
+		
+
+		<!-- 中间收货人信息以及收货人地址-->
+		<div class="warp_main">
+			<div class="main">
+				<div class="mess">收货人信息</div>
+				<div class="address_form">
+					<table cellspacing="0">
+					<!-- 收货人姓名 -->
+						<tr class="pattern1">
+							<td class="lable"><span class="red">*</span>收货人姓名 : </td>
+							<td class="value"><input type="text" class="name"><span class="red error1"></span></td>
+						</tr>
+					<!-- 所在地区 -->
+						<tr>
+							<td class="lable"><span class="red">*</span>收货人姓名 : </td>
+							<td class="value"><div class="add_details">
+									<select id="province"></select>
+					  				<select id="city"></select>
+					  				<select id="district"></select>
+								</div>
+							</td>
+						</tr>
+					<!-- 详细地址 -->
+					<tr class="pattern2">
+						<td class="lable"><span class="red">*</span>所在地 : </td>
+						<td class="value"><input type="text" class="ex_address"><span class="red error2"></span></td>
+					</tr>
+					<!-- 手机号码 -->
+					<tr class="pattern3">
+						<td class="lable"><span class="red">*</span>手机号码 : </td>
+						<td class="value"><input type="text" class="phone"><span class="red error3"></span></td>
+					</tr>
+					<!-- 备用电话 -->
+					<tr>
+						<td class="lable">备用电话 : </td>
+						<td class="value"><input type="text" class="spare_phone"></td>
+					</tr>
+					<!-- 电子邮箱 -->
+					<tr>
+						<td class="lable">电子邮箱:</td>
+						<td class="value"><input type="text" class="email"><span style="color:#999">用来接收订单提醒信息,便于您及时了解订单状态</span></td>
+						
+					</tr>
+					<!-- 保存收货人信息 -->
+					<tr>
+						<td><input type="submit" value="保存收货人信息" id="keep"></td>
+					</tr>
+					</table>
+				</div>
+				<!-- 商品清单 -->
+				<div class="bill">商品清单</div>
+				<ul class="title">
+					<li style="width:35%">商品</li>
+					<li style="width:9%">单价</li>
+					
+      				<li style="width:9%">金额</li>
+					<li style="width:9%">折扣</li>
+					<li style="width:9%">优惠</li>
+					<li style="width:10%">配送方式</li>
+				</ul>
+				<div class="autobuy">美乐乐自营</div>
+
+
+
+
+				<div class="product" >
+						<!-- <div class="id">1</div> -->
+						<div class="image"><img src="../image/msmall.jpg"></div>
+						<div class="buy_name">布艺沙发组合（1+2+3）尊享款　优质实木 精湛工艺 舒适环保 休闲纯色尊享款</div>
+						<div class="price">¥1999</div>
+						
+						<div class="sub">¥1999</div>
+						<div class="sale">¥0</div>						
+						<div class="preferential">¥0</div>
+						<div class="delect"><a href="#">物流</a></div>
+				</div>
+				
+				<div class="submit_order"><a class="submit_order_link" href="#"></a></div>
+			</div>
+		</div>
+		<div class="warp_footer"></div>
+	<script>
+
+		$(".warp_footer").load("footer.html")
+	</script>
+</body>
+</html>

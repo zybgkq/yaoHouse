@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>头部公用样式</title>
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../lib/jQuery/jquery.cookie.js"></script>
+	<!-- <script src="../js/index.js"></script> -->
+	<script src="../js/login.js"></script>
+</head>
+<body>
+	<!--header部分-->
+	<div id="warp_header">
+		<!--登录注册及购物车-->
+		<div class="header_top">
+			<ul class="header_left">
+				<li><a id="open">请登录</a></li>
+					<div id="win">
+						<!--登录的关闭按钮-->
+						<a id="close">&Chi;</a>
+						<div class="login">
+							<p>账号登录</p><br />
+							<!--<div class="username"></div>-->
+							<input type="text" class="username" placeholder="用户名/手机号/邮箱" id="username_one" />
+							<p class="error"></p>
+							<!--<div class="password"></div>-->
+							<input type="password" class="password" placeholder="密码" />
+							<p class="error"></p>
+							<div class="checked"><p></p><span>自动登录</span></div>
+							<input type="submit" class="submit_login" name="" value="登录" style="border:0; outline:0;">
+							<div class="regist"><span>注册</span><span>忘记密码</span></div>
+						</div>
+					</div>
+				<li id="regist_one"><a href="register.html">免费注册</a></li>
+			</ul>
+			<ul class="header_right">
+				<li class="header_list">
+					<a href="#">我的美乐乐</a>
+					<ol style="display:none">
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">我的金币</a></li>
+						<li><a href="#">我的红包</a></li>
+						<li><a href="#">我的收藏</a></li>
+						<li><a href="#">我的评价</a></li>
+						<li><a href="#">申请保价</a></li>
+					</ol>
+				</li>
+				<li><a href="cart.html">购物车</a></li>
+				<li><a href="#">关注美乐乐</a></li>
+				<li><a href="#">帮助中心</a></li>
+				<li><a href="#">收藏本站</a></li>
+				<li><a href="#">全国热线</a></li>
+			</ul>
+		</div>
+		<div class="header_btn">
+			<h1><a href="index.html"><img src="../image/logo.png"></a></h1>
+			
+			<div class="searchInput">
+				<form>
+					<input type="text" placeholder="体验馆6周年庆,满10000送1500,买家具送床品四件套">
+					<input type="submit" value="搜索">
+				</form>
+				<ul class="search_hot">
+					<li><a href="#">抢1500元红包</a></li>
+					<li><a href="#">床</a></li>
+					<li><a href="#">沙发</a></li>
+					<li><a href="#">餐桌椅</a></li>
+					<li><a href="#">实木床</a></li>
+					<li><a href="#">床垫大促</a></li>
+					<li><a href="#">转角沙发</a></li>
+					<li><a href="#">灯饰</a></li>
+				</ul>
+			</div>
+		
+		</div>
+	</div>
+	<script>
+	$(".header_list").mouseenter(function(){
+		$("ol").show()
+	})
+	$(".header_list").mouseleave(function(){
+		$("ol").hide()
+	})
+	</script>
+</body>
+</html>

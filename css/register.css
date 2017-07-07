@@ -1,0 +1,35 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dd,form,input,i,a{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;color:#000;}
+body{font-size:14px;}
+.fl{float:left;}
+.fr{float:right;}
+img{border:none;}
+html,body{height: 100%; font-size:12px;}
+body{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.header{width: 1190px; margin: 0 auto;} 
+.logo{padding: 30px 0; height: 65px;}
+.logo img{float: left;}
+.logo h1{float: left; line-height: 60px; margin-left: 10px;}
+.register{padding: 40px; border: 1px solid #666666; float: left; width: 1000px; height: 457px; color: #555;}
+.register form{ width: 768px; height: 457px;  border-right: 1px solid #ddd; float: left;}
+.register p{ height: 42px; float: left; margin-top: 10px;}
+.register p label{ display: inline-block; text-align: right; font-size: 14px; width: 100px; height: 19px;}
+.red{color: darkred;}
+.register p input{height: 40px; line-height: 40px; width: 296px; padding: 0 5px; border: 1px solid #d5d5d5;}
+#register_username_error,#register_password_error,#register_confirm_password_error,#register_phone_error{padding: 5px; margin-top: 10px; float: left; line-height: 15px; width: 255px; height: 30px; color: red;}
+.register .readed{clear: both; height: 16px; margin-left: 105px;}
+.register .readed label{width: 200px; float: left;}
+.register .readed input{width: 13px; height: 13px; float: left;}
+#register_submit {width: 768px; height: 42px; padding-left: 100px;}
+#register_submit input{background: #cf000e; outline: 0; font-size: 16px; color: #fff; font-weight: 600;}
+.register_pic{float: left; width: 220px; margin-left: 10px;}
+.register_pic p{float: none; text-align: center; padding-top: 20px; border-bottom:1px solid #777620;}
+.register_pic a{display: inline-block; width: 50px; height: 30px; background:#CF000E; color: #fff; text-align: center; line-height: 30px; border-radius: 3px;}
+.register_pic .pic_pic{width: 220px; height: 230px; border-radius: 50%; border: 1px solid #777620;  margin-top: 50px;}
+.register_pic .pic_pic img{ border-radius: 50%;width: 220px; height: 230px;}

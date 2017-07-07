@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" href="../css/cart.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../lib/jQuery/jquery.cookie.js"></script>
+	<script src="../js/login.js"></script>
+	<script src="../js/cart.js"></script>
+</head>
+<body>
+<div id="warp_header">
+		<!--登录注册及购物车-->
+		<div class="header_top">
+			<ul class="header_left">
+				<li><a id="open">请登录</a></li>
+					<div id="win">
+						<!--登录的关闭按钮-->
+						<a id="close">&Chi;</a>
+						<div class="login">
+							<p>账号登录</p><br />
+							<!--<div class="username"></div>-->
+							<input type="text" class="username" placeholder="用户名/手机号/邮箱"/>
+							<p class="error"></p>
+							<!--<div class="password"></div>-->
+							<input type="password" class="password" placeholder="密码" />
+							<p class="error"></p>
+							<div class="checked"><p></p><span>自动登录</span></div>
+							<a href="javascript:;" class="submit">登录</a>
+							<div class="regist"><span>注册</span><span>忘记密码</span></div>
+						</div>
+					</div>
+				<li><a   href="register.html">免费注册</a></li>
+			</ul>
+			<ul class="header_right">
+				<li class="header_list">
+					<a href="#">我的美乐乐</a>
+					<ol>
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">我的金币</a></li>
+						<li><a href="#">我的红包</a></li>
+						<li><a href="#">我的收藏</a></li>
+						<li><a href="#">我的评价</a></li>
+						<li><a href="#">申请保价</a></li>
+					</ol>
+				</li>
+				<li><a href="#">购物车</a></li>
+				<li><a href="#">关注美乐乐</a></li>
+				<li><a href="#">帮助中心</a></li>
+				<li><a href="#">收藏本站</a></li>
+				<li><a href="#">全国热线</a></li>
+			</ul>
+		</div>
+	</div>
+
+		<div class="warp_pic">
+			<div class="pic">
+				<div class="pic_logo">
+					<h1><a href="index.html"><img src="../image/logo.png"></a></h1>
+					<p class="step_cart"></p>
+				</div>
+				<div class="my_shop">我的购物车</div>
+			</div>
+		</div>
+
+
+
+		<!-- 下面购物车详情 -->
+		<div class="warp_buy">
+			<div class="buy">
+				<ul class="title">
+					<li style="width:81px"><input type="checkbox" id="check_all" class="all">全选</li>
+					<li style="width:30%">商品</li>
+					<li style="width:9%">单价</li>
+					<li style="width:15%">数量</li>
+      				<li style="width:9%">金额</li>
+					<li style="width:9%">折扣</li>
+					<li style="width:9%">优惠</li>
+					<li style="width:10%">操作</li>
+				</ul>
+
+				<div class="cart-body">
+					
+				</div>
+				<div class="total">
+					合计:<span class="pay">¥00.00</span>
+				</div>
+				<div class="submit_order"><a class="submit_order_link" href="#"></a></div>
+				<!-- 商品行的模板内容 -->
+				<div class="warp_product" >
+					
+					<div class="product" style="display:none">
+						<div class="checked_top">
+							<input id="checked_fr" type="checkbox">美乐乐自营
+						</div>
+						<div class="checked_tr">
+							<input type="checkbox" class="ck_product">
+						</div>
+						<!-- <div class="id">1</div> -->
+						<!-- <div class="image"> -->
+						<img class="img_image" src="../image/msmall.jpg">
+						<!-- </div> -->
+						<div class="name">布艺沙发组合（1+2+3）尊享款　优质实木 精湛工艺 舒适环保 休闲纯色尊享款</div>
+						<div class="price">¥1999</div>
+						<div class="amount_box">
+							<span class="minus">-</span>
+							<input type="text" class="amount" size="1" value="1">
+							<span class="add">+</span>
+						</div>
+						<div class="sub">¥1500</div>
+						<div class="sale">¥0</div>						
+						<div class="preferential">¥0</div>
+						<div class="delect"><a href="#">删除</a></div>
+					</div>
+					
+
+					<div class="noway" style="display:none">
+						您的购物车还没有商品<a href="index.html">去购物吧</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- 底部 -->
+<div id="footer">
+
+</div>
+</body>
+
+<script type="text/javascript">
+	$("#footer").load("footer.html")
+	$(".submit_order_link").click(function(){
+		location.href = "confirm.html"; 
+	})
+</script>
+</html>

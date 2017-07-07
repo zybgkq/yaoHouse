@@ -1,0 +1,86 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dd,form,input,i,a{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;color:#000;}
+body{font-size:14px;}
+.fl{float:left;}
+.fr{float:right;}
+img{border:none;}
+html,body{height: 100%; font-size:12px;}
+body{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+/*登录注册*/
+#warp_header{width: 100%; height: 149px;}
+#warp_header .header_top{height: 30px; width: 1190px; position: relative; margin: 0 auto;  background: #f8f8f8;}
+#warp_header .header_top .header_left{float: left;}
+#warp_header .header_top .header_left li{float: left; line-height: 30px; padding-right: 10px;}
+#warp_header .header_top .header_left li a{color: #999;}
+/*注册弹框*/
+#win{
+	display:none;
+	 position:absolute;
+	  left:50%; top:50%;
+	   width:600px;
+	    height:400px;
+	     margin-left:-300px;
+	      margin-top:180px;
+	       border:1px solid #888;
+	        /*background: rgba(0,0,0,.8);*/
+	       background:url(../image/loginbg.jpg);
+	       background-size: 600px 420px;
+	       opacity: .9;
+	         text-align:center;
+	         z-index: 99;
+	         }
+#win #close{position: absolute; right: 5px; top: 5px; font-size: 22px; color: #fff;}
+#win .login{width: 100%; height: auto; width: 274px; margin: 0 auto; }
+#win .login input{opacity: .8;}
+#win .login .error{border: 0; height: 16px; margin: 0; padding: 0;}
+#win .login p{font-size: 28px; color:#ccffff; font-weight: 600; margin-top: 107px; border-bottom: 1px solid #777620; padding-bottom: 5px;}
+#win .login .username{height: 40px; border: 1px solid #ddd; line-height: 40px; width: 306px;}
+#win .login .password{height: 40px; border: 1px solid #ddd; line-height: 40px; width: 306px;}
+#win .login .checked{height: 21px;  width: 306px; position: absolute; top: 270px;}
+#win .login .checked p{border: 1px solid #ddd; width:15px; height: 10px; position: absolute; margin: 0;}
+#win .login .checked span{position: absolute; left: 20px; color: #1F1F1F; margin: 0;}
+#win .login .submit_login{ width: 308px; height: 44px; line-height: 42px; display: block; background: #CF000E; color: #fff; position: absolute; top: 295px; font-size: 22px;}
+#win .login .regist{position: absolute; top: 350px; width: 306px;} 
+#win .login .regist span{color: #1F1F1F; position: absolute; margin: 0;}
+#win .login .regist span:nth-child(1){left:0}
+#win .login .regist span:nth-child(2){right:0}
+
+
+
+
+
+/*购物车等。。。。*/
+#warp_header .header_top .header_right{ position: absolute; right: 0;}
+#warp_header .header_top .header_right li{float: left; line-height: 30px; padding: 0 8px}
+#warp_header .header_top .header_right li a{color:#999;}
+#warp_header .header_top .header_right li a span{font-weight: 600; color:#cf000e; margin: 0; }
+#warp_header .header_top .header_right .header_list{position: relative;  height: 28px; line-height: 28px;}
+#warp_header .header_top .header_right .header_list ol { position: absolute;  left: -1px; width: 76px;}
+#warp_header .header_top .header_right .header_list ol li{float: none; line-height: 20px;}
+#warp_header .header_top .header_right .header_list:hover{border:1px solid #ccc; border-bottom: none; background: #fff}
+#warp_header .header_top .header_right .header_list ol{top: 28px; background: #fff; border: 1px solid #ccc; border-top: 0}
+
+
+
+
+
+/*logo*/
+#warp_header .header_btn{width: 1190px; height: 61px; padding: 29px 0;  margin: 0 auto;}
+#warp_header .header_btn h1{float: left; height: 61px;}
+#warp_header .header_btn .searchInput{margin: 0 auto; width: 496px; height: 60px}
+#warp_header .header_btn form{ width: 484px; height: 30px; margin: 3px; border: 3px solid #cf000e;}
+#warp_header .header_btn form input:nth-child(1){padding: 6px 10px; color: #000; outline: none; width: 360px; border: 1px solid #fff; }
+#warp_header .header_btn form input:nth-child(2){width: 78px; height: 30px; padding: 1px 6px; background: #cf000e; color: #fff; border: 0; float: right; font-size: 18px;}
+#warp_header .header_btn .search_hot{height: 19px;}
+#warp_header .header_btn .search_hot li{float: left; margin-right:14px;}
+#warp_header .header_btn .search_hot li:nth-of-type(1) a{color: #FF6600}
+#warp_header .header_btn .search_hot li:nth-of-type(6) a{color: #FF6600}
+#warp_header .header_btn .search_hot li a{color: #999}
+#warp_header .header_btn .search_hot li a:hover{color: #cf000e};
+

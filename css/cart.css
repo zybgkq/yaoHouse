@@ -1,0 +1,118 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dd,form,input,i,a{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;color:#000;}
+body{font-size:14px;}
+.fl{float:left;}
+.fr{float:right;}
+img{border:none;}
+html,body{height: 100%; font-size:12px;}
+body{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+/*登录注册*/
+#warp_header{width: 100%; background: #f8f8f8;}
+#warp_header .header_top{height: 30px; width: 980px; position: relative; margin: 0 auto;}
+#warp_header .header_top .header_left{float: left;}
+#warp_header .header_top .header_left li{float: left; line-height: 30px; padding-right: 10px;}
+#warp_header .header_top .header_left li a{color: #999;}
+/*注册弹框*/
+#win{
+	display:none;
+	 position:absolute;
+	  left:50%; top:50%;
+	   width:600px;
+	    height:400px;
+	     margin-left:-300px;
+	      margin-top:180px;
+	       border:1px solid #888;
+	        /*background: rgba(0,0,0,.8);*/
+	       background:url(../image/loginbg.jpg);
+	       background-size: 600px 420px;
+	       opacity: .9;
+	         text-align:center;
+	         z-index: 99;
+	         }
+#win #close{position: absolute; right: 5px; top: 5px; font-size: 22px; color: #fff;}
+#win .login{width: 100%; height: auto; width: 274px; margin: 0 auto; }
+#win .login input{opacity: .8;}
+#win .login .error{border: 0; height: 16px; margin: 0; padding: 0;}
+#win .login p{font-size: 28px; color:#ccffff; font-weight: 600; margin-top: 107px; border-bottom: 1px solid #777620; padding-bottom: 5px;}
+#win .login .username{height: 40px; border: 1px solid #ddd; line-height: 40px; width: 306px;}
+#win .login .password{height: 40px; border: 1px solid #ddd; line-height: 40px; width: 306px;}
+#win .login .checked{height: 21px;  width: 306px; position: absolute; top: 270px;}
+#win .login .checked p{border: 1px solid #ddd; width:15px; height: 10px; position: absolute; margin: 0;}
+#win .login .checked span{position: absolute; left: 20px; color: #1F1F1F; margin: 0;}
+#win .login .submit{width: 308px; height: 44px; line-height: 42px; display: block; background: #CF000E; color: #fff; position: absolute; top: 295px; font-size: 22px;}
+#win .login .regist{position: absolute; top: 350px; width: 306px;} 
+#win .login .regist span{color: #1F1F1F; position: absolute; margin: 0;}
+#win .login .regist span:nth-child(1){left:0}
+#win .login .regist span:nth-child(2){right:0}
+
+
+
+/*购物车等。。。。*/
+#warp_header .header_top .header_right{ position: absolute; right: 0;}
+#warp_header .header_top .header_right li{float: left; line-height: 30px; padding: 0 8px}
+#warp_header .header_top .header_right li a{color:#999;}
+#warp_header .header_top .header_right li a span{font-weight: 600; color:#cf000e; margin: 0; }
+#warp_header .header_top .header_right .header_list{position: relative;  height: 28px; line-height: 28px;}
+#warp_header .header_top .header_right .header_list ol { position: absolute; top: -125px; left: -1px; width: 76px;}
+#warp_header .header_top .header_right .header_list ol li{float: none; line-height: 20px;}
+#warp_header .header_top .header_right .header_list:hover{border:1px solid #ccc; border-bottom: none; background: #fff}
+#warp_header .header_top .header_right .header_list:hover ol{top: 28px; background: #fff; border: 1px solid #ccc; border-top: 0}
+
+
+
+.warp_pic{width: 100%; }
+.warp_pic .pic{width: 980px; height: auto; overflow: hidden; margin: 0 auto; padding: 20px 0 10px 0}
+.pic_logo{width: 980px; height: auto; overflow: hidden; padding-bottom: 20px}
+.warp_pic .pic h1{float: left;}
+.step_cart{width: 520px; height: 44px; float: right; margin-top: 10px; background: url(../image/buy.png) 0 0 no-repeat;}
+.my_shop{font-size:26px; color: #555}
+
+
+
+
+
+
+
+.warp_buy{width: 100%; height: auto;}
+.buy{width: 980px; height: auto; overflow: hidden; padding: 20px 0; margin:0 auto;}
+.title{width: 100%; text-align: center; background: #ddd; overflow: hidden;}
+.title li{float: left; line-height: 35px; height: 35px; border-right:1px solid #fff; color: #676767}
+.title li:first{}
+.title li:last-child{border-right:0}
+#check_all{margin-right: 5px}
+.warp_product{width: 980px; height: auto; overflow: hidden;}
+.product{height: auto; overflow: hidden; width: 100%; padding-left: 20px;  background: #fefef4; padding-top: 10px}
+
+
+
+.checked_top{ font-size: 14px; color: #555; background: #fff}
+.checked_top #checked_fr{margin-right:10px;}
+.checked_tr{margin-top: 30px; float: left; margin-right:5px;}
+/*.image{width: 90px; height: 58px; padding: 1px; border:1px solid #555; float: left;}*/
+.img_image{width: 90px; height: 58px; width: 90px; height: 58px; padding: 1px; border:1px solid #555; float: left;}
+.name{margin-left: 10px; width: 226px; height:35px; float: left; padding: 10px 0;}
+.price{float: left; vertical-align: middle; padding: 10px 0; text-align: center; height: 35px; margin:5px 30px;}
+.amount_box{width: 105px; height: 20px; float: left; margin-left:36px; margin-top: 20px}
+.amount_box .minus,.add{cursor: pointer; display: inline-block; text-align: center; width: 10px; float: left; height: 15px;  border: 1px solid #666}
+.amount_box .minus{border-right: 0}
+.amount_box .add{border-left: 0}
+.amount_box .amount{width: 30px; text-align: center; float: left;  outline: 0; border: 1px solid #666;}
+.sale{float: left; width: 95px; height: 18px; text-align: center; margin-top: 20px}
+.sub{width: 78px; height: 18px; text-align: center; float: left; margin-top: 20px}
+.preferential{width: 100px; height: 18px; text-align: center; float: left; margin-top: 20px}
+.delect{width: auto; height: 18px; text-align: center; float: left; margin-top: 20px}
+
+
+/*.cart-body{width: 100%; height: auto; overflow: hidden;}*/
+
+.submit_order_link{display: block; float: right; width: 155px; height: 41px; background: url(../image/bgh.png) -643px -99px no-repeat;}
+
+.total{width: 980px; height: 20px; background: #f2f2f2; text-align:right; font-size: 14px; color:#cf000e }
+.noway{width: 978px; height: 182px; border:1px solid #555; font-size: 22px; color: #666; text-align: center; padding-top: 40px}
+.noway a{font-size: 16px; color: #cf000e};

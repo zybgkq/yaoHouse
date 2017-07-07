@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>吸顶菜单公用</title>
+	<link rel="stylesheet" type="text/css" href="../css/mounting.css">
+</head>
+<body>
+	<div class="warp_mounting" style=" display: none;" >
+		<div class="mounting">
+			<h1 class="fl">美乐乐</h1>
+			<div class="mounting_search fl">
+					<input class="mounting_font" type="text" placeholder="体验馆6周年庆,满10000送1500,买家具送床品四件套" name="">
+					<input class="mounting_sub" type="submit" value="搜索" name="">
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$(window).scroll(function(){
+				var m=$(document).scrollTop();
+				var _headerHeight=$("#warp_header").outerHeight(true);
+				//console.log(m);
+				if (m>_headerHeight) {
+					$(".warp_mounting").slideDown("fast");
+				}else{
+					$(".warp_mounting").fadeOut();
+				}
+			})
+		});
+	</script>
+</body>
+</html>
